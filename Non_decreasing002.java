@@ -1,7 +1,6 @@
 package algorithm;
 
-import java.util.ArrayList;
-import java.util.List;
+
 
 public class Non_decreasing {
     public int checkArr(int[] num,int n){

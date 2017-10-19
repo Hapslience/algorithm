@@ -1,7 +1,6 @@
 package algorithm;
 public class Alternate {
     public void reverrange(int[] arr,int n){
-
         int temp = 0;
         int j=0;
         for (int i=0;i<n;i++){
@@ -15,7 +14,6 @@ public class Alternate {
         System.out.println(j);
 
         int pos = 0;
-        int t= j;
         while (j<n && arr[pos]<0){
             temp = arr[j];
             arr[j] = arr[pos];
@@ -39,7 +37,5 @@ public class Alternate {
         int n = arr.length;
         alt.reverrange(arr,n);
         Alternate.printArr(arr);
-        //Alternate.printArr(newArr);
-
     }
 }
