@@ -1,5 +1,5 @@
 package algorithm;
-public class Alternate {
+public class Alternate001 {
     public void reverrange(int[] arr,int n){
         int temp = 0;
         int j=0;
@@ -33,9 +33,9 @@ public class Alternate {
     }
     public static void main(String[] args){
         int[] arr  = new int[]{-1, -2, -3, 4, -5, -6, -7, 8, 9};
-        Alternate alt = new Alternate();
+        Alternate001 alt = new Alternate001();
         int n = arr.length;
         alt.reverrange(arr,n);
-        Alternate.printArr(arr);
+        Alternate001.printArr(arr);
     }
 }

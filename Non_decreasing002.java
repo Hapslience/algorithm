@@ -2,7 +2,7 @@ package algorithm;
 
 
 
-public class Non_decreasing {
+public class Non_decreasing002 {
     public int checkArr(int[] num,int n){
         for(int i=1;i<n;i++){
             if(num[i-1]>num[i]){
@@ -40,7 +40,7 @@ public class Non_decreasing {
         }
     }
     public static void main(String[] args){
-        Non_decreasing n = new Non_decreasing();
+        Non_decreasing002 n = new Non_decreasing002();
         int[] nums = new int[]{4,2,1};
         System.out.println(n.checkPossibility(nums));
     }
