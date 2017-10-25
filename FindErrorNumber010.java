@@ -13,7 +13,7 @@ import java.util.*;
 
  */
 
-public class FindErrorNumber {
+public class FindErrorNumber010 {
     /*
     method -1
      */
@@ -51,7 +51,7 @@ public class FindErrorNumber {
     }
     public static void main(String[] args){
         Map m =new HashMap();
-        FindErrorNumber f = new FindErrorNumber();
+        FindErrorNumber010 f = new FindErrorNumber010();
         int[] arr = new int[]{1,2,4,2};
         int[] s= f.findErrorNums(arr);
         System.out.println(s[0]+" "+s[1]);
