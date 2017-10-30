@@ -14,10 +14,4 @@ public class SmallestDistancePair {
         }
         return tmp;
     }
-    public static void main(String[] args){
-        SmallestDistancePair sp = new SmallestDistancePair();
-        int[] arr = new int[]{1,2,1};
-        int k = sp.smallestDistancePair(arr);
-        System.out.println(k);
-    }
 }

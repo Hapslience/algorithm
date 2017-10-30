@@ -32,11 +32,4 @@ public class ArrayPairSum {
         }
         return sum;
     }
-    public static void main(String[] args){
-        ArrayPairSum ap = new ArrayPairSum();
-        int[] nums = new int[]{1,4,3,2};
-        int sum = ap.arrayPairSum(nums);
-//        ap.quikSorting(nums,0,nums.length-1);
-        System.out.println(sum);
-    }
 }
