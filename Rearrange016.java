@@ -42,10 +42,4 @@ public class Rearrange016 {
             System.out.print(nums[i]+ " " );
         }
     }
-    public static void main(String[] args){
-        Rearrange016 rr = new Rearrange016();
-        int[] nums = new int[]{2,3,4,6,7,11};
-        int n = nums.length;
-        rr.rearrange01(nums,n);
-    }
 }
