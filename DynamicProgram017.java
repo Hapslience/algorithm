@@ -13,7 +13,6 @@ public class DynamicProgram017 {
     static{
         weight = new int[]{0,2,2,6,5,4};
         value = new int[]{0,6,3,5,4,6};
-
         capacity = 10;
         n = weight.length-1;
         aw = new int[n+1];
@@ -40,17 +39,18 @@ public class DynamicProgram017 {
                 mm[n][j]=value[n];
         }
         for (int i=n-1;i>0;i--){
-            for (int j=0;j<=capacity;j++){
-                if (weight[i]>j)
-                    mm[i][j] = mm[i+1][j];
-                else{
-                    mm[i][j] = mm[i+1][j]>mm[i+1][j-weight[i]]+value[i]?mm[i+1][j]:mm[i+1][j-weight[i]]+value[i];
+                for (int j=0;j<=capacity;j++){
+                    if (weight[i]>j)
+                        mm[i][j] = mm[i+1][j];
+                    else{
+                        mm[i][j] = mm[i+1][j]>mm[i+1][j-weight[i]]+value[i]?mm[i+1][j]:mm[i+1][j-weight[i]]+value[i];
+                    }
                 }
-            }
         }
     }
 
     public static void printArray(int[][] mm){
+        if (mm.length==0) return;
         for (int i=1;i<mm.length;i++){
             for (int j=1;j<mm[0].length;j++){
                 System.out.printf("%2d\t",mm[i][j]);
@@ -60,12 +60,14 @@ public class DynamicProgram017 {
     }
     public static void main(String[] args){
         DynamicProgram017 dp = new DynamicProgram017();
+
         dp.package_01(mm,weight,value,n);
         DynamicProgram017.printArray(mm);
+
         dp.getAnswer(mm,n);
         int i;
         for (i=1;i<=n;i++){
-            System.out.println(aw[i]);
+            System.out.print(aw[i]+" ");
 
         }
     }
